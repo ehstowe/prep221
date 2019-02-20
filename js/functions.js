@@ -1,10 +1,10 @@
 var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
 
 var calculateMean=function()
-{
+{var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
   window.alert("mean is working!");
   var buttonMean= document.getElementById("meanButton");
-  buttonMean.remove();
+  buttonMean.remove();  
   var i=0;
   data.forEach(function(d)
   {var i = i + 1});
