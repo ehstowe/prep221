@@ -10,7 +10,7 @@ var calculateMean=function()
   {var i = i + 1});
   var length = data.length;
   var theMean= i/length;
-  var meanText= document.getElementByID("mean");
+  var meanText= document.getElementById("mean");
   meanText.innerText= theMean;
   return theMean;
 }
@@ -31,6 +31,9 @@ window.alert("median is working!");
 var calculateMode=function()
 {
   window.alert("mode is working!");
+  var buttonMode=document.getElementById("modeButton");
+  buttonMode.remove();
+  
 }
   
 
