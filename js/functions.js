@@ -7,8 +7,10 @@ var calculateMean=function()
   var i=0;
   data.forEach(function(d)
   {var i = i + 1});
+  var i_i=parseInt(i) 
   var length = data.length;
-  var theMean= i/length;
+  var i_length=parseInt(length);
+  var theMean= i_i/i_length;
   var meanText= document.getElementById("mean");
   meanText.innerText= theMean;
   return theMean;
