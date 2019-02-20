@@ -36,6 +36,15 @@ var calculateMode=function()
   window.alert("mode is working!");
   var buttonMode=document.getElementById("modeButton");
   buttonMode.remove();
+  modeArray=[]
+  data.sort(function(a,b){return a-b});
+  data.forEach(function(d)
+               {data.forEach(function(x)
+                 if d=x:
+                 modeArray.push(d)))}
+  var modeText=document.getElementById("mode");
+  modeText.innerText= modeArray.toString();
+                 
   
 }
   
