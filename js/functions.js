@@ -19,6 +19,8 @@ var calculateMean=function()
 var calculateMedian=function()
 {
   var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
+  var integer_data = data.map(function(element)
+           {return parseInt(element)});
   var buttonMedian=document.getElementById("medianButton");
   buttonMedian.remove();
   data.sort(function(a,b){return a-b});
@@ -55,7 +57,7 @@ var calculateMode=function()
 var reducefunction=function()
 {
 
-var result = data.reduce((total, score) => total+score)/scores.length; 
-document.write(result);
+var sum = data.reduce(function(acc, element)
+                {return acc+element;})
   
 }
