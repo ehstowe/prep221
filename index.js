@@ -12,6 +12,7 @@ var calculateMean=function()
   var theMean= i/length;
   var meanText= document.getElementByID("mean");
   meanText.innerText= theMean;
+  return theMean;
 }
 
 var calculateMedian=function()
