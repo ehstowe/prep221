@@ -56,7 +56,8 @@ var calculateMode=function()
 
 var reduceFunction=function(data)
 {
-
+var buttonReduce=document.getElementById("Reduce Button");
+  buttonReduce.remove();
 var sum = data.reduce(function(acc, element)
                 {return acc+element;})
 var length=data.length();
