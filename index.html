@@ -10,6 +10,22 @@
   <button onclick="reduceFunction()" type="button" id="Reduce Button">Click Here to Find Average
   with the Reduce Method</button>
   <p id="reduce"</p>
+  
+  <p> The button above runs the following Javascript function:
+    var reduceFunction=function()
+{
+var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
+var buttonReduce=document.getElementById("Reduce Button");
+  buttonReduce.remove();
+var sum = data.reduce(function(acc, element)
+                {return acc+element;})
+var i_sum=parseInt(sum)
+var length = data.length;
+var i_length= parseInt(length)
+var textSum=document.getElementById("reduce");
+var theAverage=i_sum/i_length;
+var reduceText=document.getElementById("reduce");
+    reduceText.innerText=theAverage;</p>
  
   
   
