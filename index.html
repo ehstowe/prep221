@@ -11,20 +11,20 @@
   with the Reduce Method</button>
   <p id="reduce"</p>
   
-  <p> The button above runs the following Javascript function:
-    var reduceFunction=function()
-{
-var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
-var buttonReduce=document.getElementById("Reduce Button");
-  buttonReduce.remove();
-var sum = data.reduce(function(acc, element)
-                {return acc+element;})
-var i_sum=parseInt(sum)
-var length = data.length;
-var i_length= parseInt(length)
-var textSum=document.getElementById("reduce");
-var theAverage=i_sum/i_length;
-var reduceText=document.getElementById("reduce");
+  <p> The button above runs the following Javascript function:<br>
+    var reduceFunction=function()<br>
+{<br>
+var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];<br>
+var buttonReduce=document.getElementById("Reduce Button");<br>
+  buttonReduce.remove();<br>
+var sum = data.reduce(function(acc, element)<br>
+                {return acc+element;})<br>
+var i_sum=parseInt(sum)<br>
+var length = data.length;<br>
+var i_length= parseInt(length)<br>
+var textSum=document.getElementById("reduce");<br>
+var theAverage=i_sum/i_length;<br>
+var reduceText=document.getElementById("reduce");<br>
     reduceText.innerText=theAverage;</p>
   
   <p><b>data.reduce</b> finds the sum of all the elements in the array.</p>
