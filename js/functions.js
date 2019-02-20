@@ -61,12 +61,12 @@ var buttonReduce=document.getElementById("Reduce Button");
   buttonReduce.remove();
 var sum = data.reduce(function(acc, element)
                 {return acc+element;})
+var i_sum=parseInt(sum)
 var length = data.length;
 var i_length= parseInt(length)
 var textSum=document.getElementById("reduce");
-  textSum.innerText=i_length  
-var theAverage=sum/length;
-/*var reduceText=document.getElementById("reduce");
-  reduceText.innerText=theAverage;*/
+var theAverage=i_sum/i_length;
+var reduceText=document.getElementById("reduce");
+  reduceText.innerText=theAverage;
   
 }
