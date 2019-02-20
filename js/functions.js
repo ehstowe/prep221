@@ -2,7 +2,6 @@ var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31,
 
 var calculateMean=function()
 {var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
-  window.alert("mean is working!");
   var buttonMean= document.getElementById("meanButton");
   buttonMean.remove();  
   var i=0;
@@ -17,13 +16,15 @@ var calculateMean=function()
 
 var calculateMedian=function()
 {
-window.alert("median is working!");
+  var data = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
   var buttonMedian=document.getElementById("medianButton");
   buttonMedian.remove();
   data.sort(function(a,b){return a-b});
   var length = data.length;
-  var pickThis = (length+1)/2;
-  var theMedian = data[pickThis];
+  var i_length= parseInt(length)
+  var pickThis = (i_length+1)/2;
+  var i_pickThis=parseInt(pickThis)
+  var theMedian = data[i_pickThis];
   var medianText= document.getElementById("median");
   medianText.innerText= theMedian;  
 }
