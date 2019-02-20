@@ -6,8 +6,8 @@ var calculateMean=function()
   var buttonMean= document.getElementById("meanButton");
   buttonMean.remove();
   var i=0;
-  data.forEach(function(d))
-  {var i = var i + 1};
+  data.forEach(function(d)
+  {var i = var i + 1});
   var length = data.length;
   var theMean= i/length;
   var meanText= document.getElementByID("mean");
