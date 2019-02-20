@@ -54,10 +54,14 @@ var calculateMode=function()
 
   
 
-var reducefunction=function()
+var reducefunction=function(data)
 {
 
 var sum = data.reduce(function(acc, element)
                 {return acc+element;})
+var length=data.length();
+var theAverage=sum/length;
+var reduceText=document.getElementbyId("reduce");
+  reduceText.innerText=theAverage;
   
 }
