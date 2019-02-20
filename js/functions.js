@@ -40,8 +40,8 @@ var calculateMode=function()
   data.sort(function(a,b){return a-b});
   data.forEach(function(d)
                {data.forEach(function(x)
-                 if d=x:
-                 modeArray.push(d)))}
+                 if (d=x)
+               {modeArray.push(d)))}}
   var modeText=document.getElementById("mode");
   modeText.innerText= modeArray.toString();
                  
